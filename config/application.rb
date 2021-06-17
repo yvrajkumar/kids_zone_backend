@@ -43,5 +43,8 @@ module Backend
     config.middleware.use ActionDispatch::Cookies
     config.middleware.use ActionDispatch::Session::CookieStore
 
+    #scaffold
+    config.app_generators.scaffold_controller = :scaffold_controller
+
   end
 end
