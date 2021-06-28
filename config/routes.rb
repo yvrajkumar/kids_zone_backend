@@ -19,6 +19,7 @@ Rails.application.routes.draw do
       resources :updateprofile
       resources :sortasc
       resources :sortdesc
+      resources :searchresults
     end 
   end 
 end

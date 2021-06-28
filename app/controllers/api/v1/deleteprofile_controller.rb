@@ -5,6 +5,7 @@ module Api
             
             def create 
                 email = deleteprofile_params[:email]
+                puts email
                 user = Deleteprofile.find_by(email: email)
                 values = "Success"
                 if user.destroy                
@@ -17,7 +18,7 @@ module Api
             private 
 
             def deleteprofile_params
-                params[:profileDetails].permit(:email)
+                params[:profileDetails].permit(:email, :name, :phone, :address, :password)
             end
         end
     end
