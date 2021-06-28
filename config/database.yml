@@ -5,37 +5,37 @@
 #   gem 'sqlite3'
 
 # Venkat database
-# default: &default
-#   adapter: postgresql
-#   host: ec2-54-90-211-192.compute-1.amazonaws.com
-#   user: xbvxhlnebzoxes
-#   password: 52e3d371c539913338175b95fa9ba4af869e9a0e29f73b154cc18f021f787656
-#   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-#   timeout: 5000
-
-# monesh database // using temporary
 default: &default
   adapter: postgresql
-  host: ec2-34-202-54-225.compute-1.amazonaws.com
-  user: meyxtdmrephjei
-  password: 04780b4f9fa44140505d7e94588c7c0980d30a5ae30569e7c931a8081c2df5b0
+  host: ec2-54-90-211-192.compute-1.amazonaws.com
+  user: xbvxhlnebzoxes
+  password: 52e3d371c539913338175b95fa9ba4af869e9a0e29f73b154cc18f021f787656
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
 
+# monesh database // using temporary
+# default: &default
+#   adapter: postgresql
+#   host: ec2-34-202-54-225.compute-1.amazonaws.com
+#   user: meyxtdmrephjei
+#   password: 04780b4f9fa44140505d7e94588c7c0980d30a5ae30569e7c931a8081c2df5b0
+#   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+#   timeout: 5000
+
 development:
   <<: *default
-  #database: d5dm6vq57tmqhe
-  database: del5d5a7t6t345
+  database: d5dm6vq57tmqhe
+  # database: del5d5a7t6t345
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  #database: d5dm6vq57tmqhe
-  database: del5d5a7t6t345
+  database: d5dm6vq57tmqhe
+  # database: del5d5a7t6t345
 
 production:
   <<: *default
-  #database: d5dm6vq57tmqhe
-  database: del5d5a7t6t345
+  database: d5dm6vq57tmqhe
+  # database: del5d5a7t6t345
